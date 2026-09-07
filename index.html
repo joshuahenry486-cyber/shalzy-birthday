@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For Shalzy ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- FLOATING HEARTS -->
+
+    <div class="hearts">
+
+        <span>❤️</span>
+        <span>💗</span>
+        <span>✨</span>
+        <span>💕</span>
+        <span>💖</span>
+        <span>✨</span>
+        <span>❤️</span>
+        <span>💗</span>
+
+    </div>
+
+
+    <!-- OPENING SCREEN -->
+
+    <section id="opening" class="screen active">
+
+        <div class="opening-content">
+
+            <div class="gold-heart">
+                ❤️
+            </div>
+
+            <p class="small-text">
+                A little surprise from
+            </p>
+
+            <h1>
+                Boboo 🥰
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <h2>
+                For My Shalzy ❤️
+            </h2>
+
+            <p class="subtitle">
+
+                I've been waiting to show you this...
+
+            </p>
+
+            <button onclick="showBirthday()">
+
+                Begin Your Surprise ✨
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- BIRTHDAY SCREEN -->
+
+    <section id="birthday" class="screen">
+
+        <div class="birthday-content">
+
+            <div class="celebration">
+                🎂
+            </div>
+
+            <p class="small-text">
+                Today is your day...
+            </p>
+
+            <h1>
+
+                Happy Birthday,
+
+                <br>
+
+                <span>Shalzy ❤️</span>
+
+            </h1>
+
+            <p>
+                8 • September • 2026
+            </p>
+
+            <button onclick="showMessage()">
+
+                I Have Something For You 💌
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- MESSAGE SCREEN -->
+
+    <section id="message" class="screen">
+
+        <div>
+
+            <div class="gold-heart">
+                💖
+            </div>
+
+            <h1>
+                Before You Continue...
+            </h1>
+
+            <p>
+                There are a few things Boboo wants you to know.
+            </p>
+
+            <button onclick="showHer()">
+
+                Continue, Shalzy ❤️
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- HER PHOTO EXPERIENCE -->
+
+<section id="her" class="screen">
+
+    <div class="photo-experience">
+
+        <p class="small-text">
+            There's something I need you to see...
+        </p>
+
+        <h1 id="photoTitle">
+            Look at my beautiful girl 🥹❤️
+        </h1>
+
+        <div class="photo-frame">
+
+            <img
+                id="herPhoto"
+                src="images/her1.jpg"
+                alt="Shalzy"
+            >
+
+        </div>
+
+        <p id="photoCaption" class="photo-caption">
+            How did Boboo get this lucky? ❤️
+        </p>
+
+        <button onclick="nextPhoto()">
+            Next ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORIES INTRO -->
+
+<section id="memories" class="screen">
+
+    <div class="memory-intro">
+
+        <p class="small-text">
+            Chapter Two
+        </p>
+
+        <h1>
+            Our Memories ❤️
+        </h1>
+
+        <p>
+            Every picture holds a little piece of our story.
+        </p>
+
+        <button onclick="openMemoryStory()">
+            Take Me Back 📸
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- MEMORY STORY -->
+
+<section id="memoryStory" class="screen">
+
+    <div class="memory-container">
+
+        <p class="small-text" id="memoryNumber">
+            Memory 01
+        </p>
+
+        <h1 id="memoryTitle">
+            A moment I'll never forget ❤️
+        </h1>
+
+        <div class="memory-frame">
+
+            <img
+                id="memoryImage"
+                src="images/memory1.jpg"
+                alt="Our memory"
+            >
+
+        </div>
+
+        <p id="memoryCaption">
+            Some moments become memories...
+        </p>
+
+        <button onclick="nextMemory()">
+            Next Memory ❤️
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO INTRO -->
+
+<section id="videosIntro" class="screen">
+
+    <div class="video-intro">
+
+        <div class="video-icon">
+            🎥
+        </div>
+
+        <p class="small-text">
+            Chapter Three
+        </p>
+
+        <h1>
+            Pictures Aren't Enough... ❤️
+        </h1>
+
+        <p>
+            Some memories deserve to move.
+            <br>
+            So I saved a few special moments for you.
+        </p>
+
+        <button onclick="openVideos()">
+            Watch Our Moments 🎬
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- VIDEO STORY -->
+
+<section id="videoStory" class="screen">
+
+    <div class="video-container">
+
+        <p class="small-text" id="videoNumber">
+            Moment 01
+        </p>
+
+        <h1 id="videoTitle">
+            A moment worth remembering ❤️
+        </h1>
+
+        <div class="video-frame">
+
+            <video
+                id="memoryVideo"
+                controls
+                playsinline
+                preload="metadata"
+            >
+                <source
+                    id="videoSource"
+                    src="videos/memory1.mp4"
+                    type="video/mp4"
+                >
+            </video>
+
+        </div>
+
+        <p id="videoCaption">
+            Some moments are better experienced than explained.
+        </p>
+
+        <button onclick="nextVideo()">
+            Next Moment ❤️
+        </button>
+
+    </div>
+
+</section>
+<!-- LOVE LETTER -->
+
+<section id="loveLetter" class="screen">
+
+    <div class="love-letter">
+
+        <div class="letter-heart">
+            💌
+        </div>
+
+        <p class="small-text">
+            Chapter Four
+        </p>
+
+        <h1>
+            A Letter From Boboo ❤️
+        </h1>
+
+        <div class="letter-box">
+
+            <p id="typedMessage"></p>
+
+        </div>
+
+        <button id="letterButton" onclick="showFinalSurprise()" style="display: none;">
+            There's One More Thing... 🎁
+        </button>
+
+    </div>
+
+</section>
+<!-- FINAL SURPRISE -->
+
+<section id="finalSurprise" class="screen">
+
+    <div class="final-content">
+
+        <div class="final-hearts">
+            ❤️ 💖 ❤️
+        </div>
+
+        <p class="small-text">
+            One last thing...
+        </p>
+
+        <h1>
+            Happy Birthday,<br>
+            <span>My Shalzy ❤️</span>
+        </h1>
+
+        <div class="final-message">
+
+            <p>
+                You are one of the most beautiful parts of my life.
+            </p>
+
+            <p>
+                I hope today reminds you just how loved,
+                appreciated and special you are.
+            </p>
+
+            <p>
+                Here's to more laughter, more adventures,
+                more memories and more <strong>US</strong>. ❤️
+            </p>
+
+        </div>
+
+        <div class="final-cake">
+            🎂
+        </div>
+
+        <h2>
+            I love you, Shalzy ❤️
+        </h2>
+
+        <p class="from-boboo">
+            Forever yours,<br>
+            <strong>Boboo 🥰</strong>
+        </p>
+
+    </div>
+
+</section>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

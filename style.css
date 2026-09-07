@@ -1,0 +1,1194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, sans-serif;
+
+    color: white;
+
+    overflow: hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 20% 20%,
+            rgba(255, 215, 120, 0.25),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 105, 180, 0.35),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #ff9eb5,
+            #e75480 45%,
+            #8f294d
+        );
+
+}
+
+
+/* =========================
+   SCREENS
+========================= */
+
+.screen {
+
+    position: absolute;
+
+    inset: 0;
+
+    min-height: 100vh;
+
+    display: none;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    padding: 25px;
+
+}
+
+
+.screen.active {
+
+    display: flex;
+
+    animation: screenIn 1.2s ease;
+
+}
+
+
+/* =========================
+   OPENING
+========================= */
+
+.opening-content {
+
+    max-width: 650px;
+
+}
+
+
+.gold-heart {
+
+    font-size: 90px;
+
+    margin-bottom: 15px;
+
+    filter:
+        drop-shadow(
+            0 0 15px
+            rgba(255, 215, 100, 0.8)
+        );
+
+    animation: heartbeat 1.5s infinite;
+
+}
+
+
+.small-text {
+
+    font-size: 14px;
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #ffe5a0;
+
+    margin-bottom: 10px;
+
+}
+
+
+h1 {
+
+    font-size: 55px;
+
+    line-height: 1.15;
+
+    margin: 15px 0;
+
+}
+
+
+h2 {
+
+    font-size: 34px;
+
+    color: #ffe5a0;
+
+    margin: 15px 0;
+
+}
+
+
+.subtitle {
+
+    font-size: 20px;
+
+    opacity: 0.9;
+
+    margin: 25px 0 35px;
+
+}
+
+
+/* =========================
+   GOLD LINE
+========================= */
+
+.gold-line {
+
+    width: 100px;
+
+    height: 3px;
+
+    background: #ffd76a;
+
+    margin: 20px auto;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 0 15px rgba(255, 215, 106, 0.8);
+
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+
+    border: none;
+
+    padding: 17px 32px;
+
+    border-radius: 50px;
+
+    background: linear-gradient(
+        135deg,
+        #fff,
+        #ffe7a3
+    );
+
+    color: #a52d55;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(0, 0, 0, 0.25),
+
+        0 0 20px
+        rgba(255, 215, 106, 0.3);
+
+    transition: all 0.3s ease;
+
+}
+
+
+button:hover {
+
+    transform:
+        translateY(-4px)
+        scale(1.05);
+
+}
+
+
+button:active {
+
+    transform: scale(0.95);
+
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.hearts span {
+
+    position: absolute;
+
+    bottom: -50px;
+
+    font-size: 24px;
+
+    opacity: 0.6;
+
+    animation: floatUp linear infinite;
+
+}
+
+
+/* Floating positions */
+
+.hearts span:nth-child(1) {
+
+    left: 5%;
+    animation-duration: 8s;
+
+}
+
+
+.hearts span:nth-child(2) {
+
+    left: 18%;
+    animation-duration: 11s;
+    animation-delay: 2s;
+
+}
+
+
+.hearts span:nth-child(3) {
+
+    left: 30%;
+    animation-duration: 9s;
+    animation-delay: 4s;
+
+}
+
+
+.hearts span:nth-child(4) {
+
+    left: 45%;
+    animation-duration: 12s;
+    animation-delay: 1s;
+
+}
+
+
+.hearts span:nth-child(5) {
+
+    left: 60%;
+    animation-duration: 10s;
+    animation-delay: 3s;
+
+}
+
+
+.hearts span:nth-child(6) {
+
+    left: 73%;
+    animation-duration: 8s;
+    animation-delay: 5s;
+
+}
+
+
+.hearts span:nth-child(7) {
+
+    left: 85%;
+    animation-duration: 13s;
+    animation-delay: 2s;
+
+}
+
+
+.hearts span:nth-child(8) {
+
+    left: 94%;
+    animation-duration: 9s;
+    animation-delay: 6s;
+
+}
+
+
+/* =========================
+   BIRTHDAY
+========================= */
+
+.celebration {
+
+    font-size: 100px;
+
+    animation:
+        bounce 1s infinite alternate;
+
+}
+
+
+#birthday h1 span {
+
+    color: #ffe39a;
+
+    text-shadow:
+        0 0 20px
+        rgba(255, 215, 100, 0.6);
+
+}
+
+
+/* =========================
+   PHOTO
+========================= */
+
+#her {
+
+    overflow-y: auto;
+
+}
+
+
+#her img {
+
+    width: 280px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    margin: 20px;
+
+    border: 3px solid #ffd76a;
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(0, 0, 0, 0.4),
+
+        0 0 25px
+        rgba(255, 215, 100, 0.3);
+
+    animation: photoIn 1s ease;
+
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes heartbeat {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+@keyframes floatUp {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+
+    }
+
+    10% {
+
+        opacity: 0.6;
+
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+
+    }
+
+}
+
+
+@keyframes screenIn {
+
+    from {
+
+        opacity: 0;
+
+        transform: scale(1.08);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: scale(1);
+
+    }
+
+}
+
+
+@keyframes bounce {
+
+    from {
+
+        transform:
+            translateY(0);
+
+    }
+
+    to {
+
+        transform:
+            translateY(-15px);
+
+    }
+
+}
+
+
+@keyframes photoIn {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.8)
+            rotate(-5deg);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            rotate(0);
+
+    }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    h2 {
+
+        font-size: 28px;
+
+    }
+
+
+    .gold-heart {
+
+        font-size: 75px;
+
+    }
+
+
+    .subtitle {
+
+        font-size: 17px;
+
+    }
+
+
+    button {
+
+        padding: 15px 25px;
+
+        font-size: 15px;
+
+    }
+
+
+    #her img {
+
+        width: 240px;
+
+        height: 310px;
+
+    }
+
+}
+/* =========================
+   PHOTO EXPERIENCE
+========================= */
+
+.photo-experience {
+
+    max-width: 650px;
+
+    width: 100%;
+
+}
+
+
+.photo-frame {
+
+    position: relative;
+
+    display: inline-block;
+
+    padding: 8px;
+
+    border-radius: 30px;
+
+    background: linear-gradient(
+        135deg,
+        #ffd76a,
+        #fff0b5,
+        #ffd76a
+    );
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(0, 0, 0, 0.4),
+
+        0 0 30px
+        rgba(255, 215, 106, 0.4);
+
+}
+
+
+.photo-frame img {
+
+    display: block;
+
+    width: 280px;
+
+    height: 350px;
+
+    object-fit: cover;
+
+    border-radius: 23px;
+
+    transition: opacity 0.3s ease;
+
+}
+
+
+.photo-caption {
+
+    font-size: 19px;
+
+    margin: 25px auto;
+
+    max-width: 450px;
+
+}
+
+
+#memories {
+
+    background:
+
+        radial-gradient(
+            circle at center,
+            rgba(255, 215, 106, 0.15),
+            transparent 50%
+        );
+
+}
+
+
+.memory-intro {
+
+    max-width: 600px;
+
+}
+
+
+.memory-intro h1 {
+
+    color: #ffe3a0;
+
+    text-shadow:
+        0 0 20px
+        rgba(255, 215, 106, 0.5);
+
+}
+
+
+/* MOBILE PHOTO */
+
+@media (max-width: 600px) {
+
+    .photo-frame img {
+
+        width: 240px;
+
+        height: 310px;
+
+    }
+
+}
+/* =========================
+   MEMORY STORY
+========================= */
+
+.memory-container {
+
+    width: 100%;
+
+    max-width: 650px;
+
+}
+
+
+.memory-frame {
+
+    display: inline-block;
+
+    padding: 8px;
+
+    margin: 15px 0;
+
+    border-radius: 30px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #ffd76a,
+            #fff2b5,
+            #ffd76a
+        );
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(0,0,0,0.4),
+
+        0 0 30px
+        rgba(255,215,106,0.4);
+
+}
+
+
+.memory-frame img {
+
+    display: block;
+
+    width: 300px;
+
+    height: 360px;
+
+    object-fit: cover;
+
+    border-radius: 23px;
+
+    animation: memoryAppear 0.7s ease;
+
+}
+
+
+#memoryCaption {
+
+    font-size: 19px;
+
+    max-width: 500px;
+
+    margin: 15px auto 30px;
+
+    line-height: 1.6;
+
+}
+
+
+/* MEMORY ANIMATION */
+
+@keyframes memoryAppear {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            scale(0.9)
+            translateY(20px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            scale(1)
+            translateY(0);
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .memory-frame img {
+
+        width: 245px;
+
+        height: 310px;
+
+    }
+
+}
+/* =========================
+   VIDEO STORY
+========================= */
+
+const videos = [
+
+    {
+        video: "videos/memory1.mp4",
+        title: "A moment worth remembering ❤️",
+        caption: "Some moments are better experienced than explained."
+    },
+
+    {
+        video: "videos/memory2.mp4",
+        title: "Look at us 🥹❤️",
+        caption: "I could watch this moment over and over again."
+    },
+
+    {
+        video: "videos/memory3.mp4",
+        title: "One of my favorite moments ❤️",
+        caption: "Every little moment with you means something to me."
+    },
+
+    {
+        video: "videos/memory4.mp4",
+        title: "Just us 🥰",
+        caption: "And I hope this is only the beginning."
+    },
+
+    {
+        video: "videos/special1.mp4",
+        title: "A special one for you 💖",
+        caption: "Because you deserve your own little movie."
+    },
+
+    {
+        video: "videos/special2.mp4",
+        title: "Another memory ❤️",
+        caption: "More laughter. More memories. More us."
+    },
+
+    {
+        video: "videos/special3.mp4",
+        title: "For my Shalzy 🥹",
+        caption: "Happy birthday to the girl who means so much to me."
+    },
+
+    {
+        video: "videos/special4.mp4",
+        title: "And there's more... 😍",
+        caption: "We're not done making memories."
+    },
+
+    {
+        video: "videos/special5.mp4",
+        title: "One last look back ❤️",
+        caption: "Look how far we've come."
+    },
+
+    {
+        video: "videos/special6.mp4",
+        title: "Before the final surprise... 🎁",
+        caption: "There's just one more thing I want you to see."
+    },
+
+    {
+        video: "videos/special7.mp4",
+        title: "This one is for you, Shalzy ❤️",
+        caption: "Happy birthday, my love."
+    }
+
+];
+
+
+let currentVideo = 0;
+
+
+function openVideos() {
+
+    currentVideo = 0;
+
+    showScreen("videoStory");
+
+    updateVideo();
+
+}
+
+
+function updateVideo() {
+
+    const video = videos[currentVideo];
+
+    const videoElement =
+        document.getElementById("memoryVideo");
+
+    const sourceElement =
+        document.getElementById("videoSource");
+
+    document.getElementById("videoNumber").textContent =
+        "Moment " +
+        String(currentVideo + 1).padStart(2, "0");
+
+    document.getElementById("videoTitle").textContent =
+        video.title;
+
+    document.getElementById("videoCaption").textContent =
+        video.caption;
+
+    sourceElement.src = video.video;
+
+    videoElement.load();
+
+}
+
+
+function nextVideo() {
+
+    const videoElement =
+        document.getElementById("memoryVideo");
+
+    videoElement.pause();
+
+    currentVideo++;
+
+    if (currentVideo >= videos.length) {
+
+        showScreen("loveLetter");
+
+        return;
+
+    }
+
+    updateVideo();
+
+}
+/* =========================
+   LOVE LETTER
+========================= */
+
+.love-letter {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.letter-heart {
+    font-size: 65px;
+    animation: heartbeat 1.5s infinite;
+    margin-bottom: 15px;
+}
+
+.letter-box {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    margin: 25px 0;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+#typedMessage {
+    color: #6b174f;
+    font-size: 18px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+@media (max-width: 600px) {
+
+    .letter-box {
+        padding: 22px;
+    }
+
+    #typedMessage {
+        font-size: 16px;
+    }
+
+}
+/* =========================
+   FINAL SURPRISE
+========================= */
+
+.final-content {
+    width: 100%;
+    max-width: 750px;
+    margin: auto;
+}
+
+.final-hearts {
+    font-size: 35px;
+    margin-bottom: 15px;
+    animation: heartbeat 1.5s infinite;
+}
+
+.final-message {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 25px;
+    margin: 25px 0;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.final-message p {
+    color: #6b174f;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 12px 0;
+}
+
+.final-cake {
+    font-size: 75px;
+    animation: bounce 1.5s infinite;
+    margin: 20px 0;
+}
+
+.final-content h2 {
+    color: #8b145f;
+    margin-top: 20px;
+}
+
+.from-boboo {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+
+    .final-message {
+        padding: 20px;
+    }
+
+    .final-message p {
+        font-size: 16px;
+    }
+
+}
+/* =========================
+   FINAL SCREEN ANIMATION
+========================= */
+
+#finalSurprise.active .final-content {
+    animation: finalReveal 1.5s ease;
+}
+
+@keyframes finalReveal {
+
+    0% {
+        opacity: 0;
+        transform: scale(0.85) translateY(30px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: scale(1.03) translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+
+}
+
+#finalSurprise h1 {
+    animation: finalGlow 2s ease-in-out infinite alternate;
+}
+
+@keyframes finalGlow {
+
+    from {
+        text-shadow: 0 0 5px rgba(212, 175, 55, 0.2);
+    }
+
+    to {
+        text-shadow: 0 0 25px rgba(212, 175, 55, 0.8);
+    }
+
+}
+/* =========================
+   MOBILE PREMIUM POLISH
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .screen {
+        padding: 25px 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 1.35rem;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    button {
+        width: 90%;
+        max-width: 330px;
+        min-height: 52px;
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+
+    .opening-content,
+    .birthday-content,
+    .photo-experience,
+    .memory-container,
+    .video-container,
+    .love-letter,
+    .final-content {
+        width: 100%;
+    }
+
+    .gold-heart {
+        font-size: 55px;
+    }
+
+    .photo-frame {
+        width: 90%;
+        max-width: 350px;
+        margin: 20px auto;
+    }
+
+    .photo-frame img {
+        max-height: 55vh;
+        object-fit: cover;
+    }
+
+    .memory-frame {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    .memory-frame img {
+        max-height: 55vh;
+        object-fit: cover;
+    }
+
+    .video-frame {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .video-frame video {
+        max-height: 60vh;
+    }
+
+    .letter-box {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #typedMessage {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .final-content {
+        padding-bottom: 30px;
+    }
+
+    .final-message {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+}
+/* =========================
+   MOBILE SCROLLING FIX
+========================= */
+
+@media (max-width: 600px) {
+
+    .screen {
+        min-height: 100vh;
+        height: auto;
+        overflow-y: auto;
+        box-sizing: border-box;
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+
+    #loveLetter {
+        align-items: flex-start;
+    }
+
+    .love-letter {
+        padding-bottom: 40px;
+    }
+
+    .letter-box {
+        max-height: none;
+        overflow: visible;
+    }
+
+    #typedMessage {
+        padding-bottom: 20px;
+    }
+
+    #letterButton {
+        margin-bottom: 30px;
+    }
+
+}
