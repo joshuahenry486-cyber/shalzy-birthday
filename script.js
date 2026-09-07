@@ -53,25 +53,25 @@ function showHer() {
 const herPhotos = [
 
     {
-        image: "images/her1.jpg",
+        image: "her1.jpg",
         title: "Look at my beautiful girl 🥹❤️",
         caption: "How did Boboo get this lucky?"
     },
 
     {
-        image: "images/her2.jpg",
+        image: "her2.jpg",
         title: "That smile though... 😍",
         caption: "You have no idea what that smile does to me."
     },
 
     {
-        image: "images/her3.jpg",
+        image: "her3.jpg",
         title: "My Shalzy ❤️",
         caption: "Beautiful isn't even enough to describe you."
     },
 
     {
-        image: "images/fav1.jpg",
+        image: "fav1.jpg",
         title: "My favorite girl 🥰",
         caption: "If I had to choose again, I'd still choose you."
     }
@@ -142,49 +142,49 @@ function startMemories() {
 const memories = [
 
     {
-        image: "images/memory1.jpg",
+        image: "memory1.jpg",
         title: "A moment I'll never forget ❤️",
         caption: "Looking at this picture always takes me back."
     },
 
     {
-        image: "images/memory2.jpg",
+        image: "memory2.jpg",
         title: "Look at us 🥹",
         caption: "One picture, so many memories."
     },
 
     {
-        image: "images/memory3.jpg",
+        image: "memory3.jpg",
         title: "Another beautiful moment ❤️",
         caption: "I'm grateful for every moment we've shared."
     },
 
     {
-        image: "images/memory4.jpg",
+        image: "memory4.jpg",
         title: "And then there's this... 🥰",
         caption: "I hope we create thousands more memories together."
     },
 
     {
-        image: "images/us1.jpg",
+        image: "us1.jpg",
         title: "Us ❤️",
         caption: "My favorite place is anywhere with you."
     },
 
     {
-        image: "images/us2.jpg",
+        image: "us2.jpg",
         title: "Just you and me 🥰",
         caption: "I'd choose these moments over and over again."
     },
 
     {
-        image: "images/us3.jpg",
+        image: "us3.jpg",
         title: "Our little story ❤️",
         caption: "And we're only getting started..."
     },
 
     {
-        image: "images/us4.jpg",
+        image: "us4.jpg",
         title: "Here's to many more 🥂",
         caption: "More adventures. More laughter. More us."
     }
@@ -288,67 +288,67 @@ function nextVideo() {
 const videos = [
 
     {
-        video: "videos/memory1.mp4",
+        video: "memory1.mp4",
         title: "A moment worth remembering ❤️",
         caption: "Some moments are better experienced than explained."
     },
 
     {
-        video: "videos/memory2.mp4",
+        video: "memory2.mp4",
         title: "Look at us 🥹❤️",
         caption: "I could watch this moment over and over again."
     },
 
     {
-        video: "videos/memory3.mp4",
+        video: "memory3.mp4",
         title: "One of my favorite moments ❤️",
         caption: "Every little moment with you means something to me."
     },
 
     {
-        video: "videos/memory4.mp4",
+        video: "memory4.mp4",
         title: "Just us 🥰",
         caption: "I hope this is only the beginning."
     },
 
     {
-        video: "videos/special1.mp4",
+        video: "special1.mp4",
         title: "A special one for you 💖",
         caption: "Because you deserve your own little movie."
     },
 
     {
-        video: "videos/special2.mp4",
+        video: "special2.mp4",
         title: "Another beautiful memory ❤️",
         caption: "More laughter. More memories. More us."
     },
 
     {
-        video: "videos/special3.mp4",
+        video: "special3.mp4",
         title: "For my Shalzy 🥹",
         caption: "Happy birthday to the girl who means so much to me."
     },
 
     {
-        video: "videos/special4.mp4",
+        video: "special4.mp4",
         title: "And there's more... 😍",
         caption: "We're not done making memories."
     },
 
     {
-        video: "videos/special5.mp4",
+        video: "special5.mp4",
         title: "One last look back ❤️",
         caption: "Look how far we've come."
     },
 
     {
-        video: "videos/special6.mp4",
+        video: "special6.mp4",
         title: "Before the final surprise... 🎁",
         caption: "There's just one more thing I want you to see."
     },
 
     {
-        video: "videos/special7.mp4",
+        video: "special7.mp4",
         title: "This one is for you, Shalzy ❤️",
         caption: "Happy birthday, my love."
     }
